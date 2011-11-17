@@ -110,14 +110,21 @@ public class DB
 			System.err.println("Error: "+e.getMessage());
 		}
 	}
-	public static void readDB() throws Exception
+	public static void readDB()
 	{
-		Scanner list = new Scanner(new File(activeDB)).useDelimiter("#");
-		for(int c=0;list.hasNext();c++)
+		try
 		{
-			String current=list.next();
-			current = current.trim();
-			System.out.println(current);
+			Scanner list = new Scanner(new File(activeDB)).useDelimiter("#");
+			for(int c=0;list.hasNext();c++)
+			{
+				String current=list.next();
+				current = current.trim();
+				System.out.println(current);
+			}
+		}
+		catch(Exception e)
+		{
+			System.err.println("Error: "+e.getMessage();
 		}
 	}
 	public static void deleteDB()
