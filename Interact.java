@@ -26,7 +26,7 @@ public class Interact
 			}
 		}
 	}
-	public void clearScreen()
+	public void clearScreen() //may not be needed, may be used to simulate updating terminal
 	{
 		for(int i=0;i<50;i++){System.out.println("");};
 	}
