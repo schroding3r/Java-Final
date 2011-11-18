@@ -20,6 +20,10 @@ public abstract class Account
 	{
 		interestRate=a;
 	}
+	public void steve()
+	{
+		System.out.println("Wut up, nigger");
+	}
 	public double getBalance()
 	{
 		return balance;
