@@ -22,7 +22,7 @@ public abstract class Account
 	}
 	public void steve()
 	{
-		System.out.println("Wut up, nigger");
+		System.out.println("Wut up, homie");
 	}
 	public double getBalance()
 	{
