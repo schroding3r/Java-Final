@@ -67,4 +67,11 @@ public class Interact
 			
 		}
 	}
+	public static String getFancyString(int r) //Fetches and formats a pretty string of record info
+	{
+		String rec = DB.actRetrive(r,true);
+		StringTokenizer st = new StringTokenizer(rec,":",false);
+		String finalstr=("Balance: "+st.nextToken()+"\nNum of Transactions: "+st.nextToken()+"\nInterest Rate: "+st.nextToken()+"\nAccount Number: "+st.nextToken()+"\nIs Red: "+st.nextToken()+"\nPremium: "+st.nextToken());
+		return finalstr;
+	}
 }
