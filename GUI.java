@@ -1,4 +1,4 @@
-package banking;
+ package banking;
  
 import javax.swing.*;
 
@@ -7,11 +7,14 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
  
 /*
-Code stolen from an Oracle tutorial
+ * ButtonDemo.java requires the following files:
+ *   images/right.gif
+ *   images/middle.gif
+ *   images/left.gif
  */
 public class GUI extends JPanel
                         implements ActionListener {
-  private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 	protected JButton b1, b2, b3;
  
     public GUI() {
@@ -86,7 +89,7 @@ public class GUI extends JPanel
         frame.pack();
         frame.setVisible(true);
     }
-    public static void main() 
+    public void main() 
     {
         //Schedule a job for the event-dispatching thread:
         //creating and showing this application's GUI.
